@@ -1,0 +1,87 @@
+package us.myles.nms;
+
+import us.myles.classtrap.TrapTag;
+import us.myles.classtrap.TrapTagType;
+
+//net.minecraft.server.v1_7_R3.Block
+@TrapTag
+public interface Block {
+	public void remove(World arg0, int arg1, int arg2, int arg3, Block arg4, int arg5);
+	public double B();
+	public double C();
+	public java.lang.String getName();
+	public boolean r();
+	public boolean c();
+	public boolean c(Block arg0);
+	public int c(IBlockAccess arg0, int arg1, int arg2, int arg3, int arg4);
+	public Block c(java.lang.String arg0);
+	public int h();
+	public int m();
+	public double x();
+	public double A();
+	public void b(World arg0, int arg1, int arg2, int arg3, Entity arg4);
+	public void b(World arg0, int arg1, int arg2, int arg3, int arg4, int arg5);
+	public int b(IBlockAccess arg0, int arg1, int arg2, int arg3, int arg4);
+	public int b();
+	public boolean b(IBlockAccess arg0, int arg1, int arg2, int arg3);
+	public int k();
+	public boolean j();
+	public boolean j(World arg0, int arg1, int arg2, int arg3);
+	public java.lang.String a();
+	public MovingObjectPosition a(World arg0, int arg1, int arg2, int arg3, Vec3D arg4, Vec3D arg5);
+	public float a(Entity arg0);
+	public boolean a(World arg0, int arg1, int arg2, int arg3, int arg4, int arg5);
+	public void a(World arg0, EntityHuman arg1, int arg2, int arg3, int arg4, int arg5);
+	public void a(World arg0, int arg1, int arg2, int arg3, Entity arg4, Vec3D arg5);
+	public void a(World arg0, int arg1, int arg2, int arg3, Entity arg4);
+	public boolean a(int arg0, boolean arg1);
+	public void a(World arg0, int arg1, int arg2, int arg3, java.util.Random arg4);
+	public int a(World arg0);
+	public AxisAlignedBB a(World arg0, int arg1, int arg2, int arg3);
+	public void a(World arg0, int arg1, int arg2, int arg3, AxisAlignedBB arg4, java.util.List arg5, Entity arg6);
+	@TrapTag(type = TrapTagType.METHOD, value = "a")
+	public void a2(World arg0, int arg1, int arg2, int arg3, int arg4, EntityHuman arg5);
+	public Block a(CreativeModeTab arg0);
+	public void a(World arg0, int arg1, int arg2, int arg3, Entity arg4, float arg5);
+	public boolean a(Explosion arg0);
+	public int a(java.util.Random arg0);
+	public double y();
+	public void l(World arg0, int arg1, int arg2, int arg3);
+	public boolean d();
+	public boolean d(IBlockAccess arg0, int arg1, int arg2, int arg3, int arg4);
+	public int g(World arg0, int arg1, int arg2, int arg3, int arg4);
+	public void g();
+	public double z();
+	public boolean v();
+	public boolean n();
+	public float f(World arg0, int arg1, int arg2, int arg3);
+	public void f(World arg0, int arg1, int arg2, int arg3, int arg4);
+	public MaterialMapColor f(int arg0);
+	public boolean L();
+	public boolean G();
+	public boolean M();
+	public void attack(World arg0, int arg1, int arg2, int arg3, EntityHuman arg4);
+	public Material getMaterial();
+	public boolean canPlace(World arg0, int arg1, int arg2, int arg3, int arg4);
+	public boolean canPlace(World arg0, int arg1, int arg2, int arg3);
+	public boolean canPlace(World arg0, int arg1, int arg2, int arg3, int arg4, ItemStack arg5);
+	public float getDamage(EntityHuman arg0, World arg1, int arg2, int arg3, int arg4);
+	public void doPhysics(World arg0, int arg1, int arg2, int arg3, Block arg4);
+	public boolean isTicking();
+	public void onPlace(World arg0, int arg1, int arg2, int arg3);
+	public int getDropData(World arg0, int arg1, int arg2, int arg3);
+	public int getDropData(int arg0);
+	public Item getDropType(int arg0, java.util.Random arg1, int arg2);
+	public int getPlacedData(World arg0, int arg1, int arg2, int arg3, int arg4, float arg5, float arg6, float arg7, int arg8);
+	public void postBreak(World arg0, int arg1, int arg2, int arg3, int arg4);
+	public boolean interact(World arg0, int arg1, int arg2, int arg3, EntityHuman arg4, int arg5, float arg6, float arg7, float arg8);
+	public void postPlace(World arg0, int arg1, int arg2, int arg3, EntityLiving arg4, ItemStack arg5);
+	public void postPlace(World arg0, int arg1, int arg2, int arg3, int arg4);
+	public int getDropCount(int arg0, java.util.Random arg1);
+	public boolean isPowerSource();
+	public void dropNaturally(World arg0, int arg1, int arg2, int arg3, int arg4, float arg5, int arg6);
+	public void updateShape(IBlockAccess arg0, int arg1, int arg2, int arg3);
+	public void wasExploded(World arg0, int arg1, int arg2, int arg3, Explosion arg4);
+	public int getExpDrop(World arg0, int arg1, int arg2);
+	public boolean isTileEntity();
+}
